@@ -1,0 +1,64 @@
+.chuangkou{
+	
+
+
+height:500px;
+width: 350px;
+background-color: white;
+
+margin-right: 100px;
+border-style: solid;
+position: absolute;
+z-index: 2;
+top: 25px;
+right: 100px;
+}
+.zhongjian{
+position:relative;
+z-index: 1;
+margin-top: 0px;
+	height:100%;
+	width: 100%;
+
+	
+	
+}
+
+.shuru{
+float: left;
+margin-left: 13%;
+
+margin-top: -20px;
+
+	
+}
+
+.denglu1{
+	
+	height: 150px;
+	width: 100p;
+	
+}
+.denglu{
+margin-top: 5px;
+margin-left: 50px;
+
+}
+
+
+.zhanghao ,.mima{
+color: red;	
+font-size: 20px;
+font-weight: bolder;	
+}
+
+#dengluanniu{
+	float: left;
+margin-top: 100px;
+color: white;
+background-color: coral;
+height: 50px;
+width: 200px;
+margin-top: 50px;
+margin-left: 30px;
+}

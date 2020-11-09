@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/buy.css"/>
+		
+		<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+			
+			<script type="text/javascript">
+				
+			
+			
+			function  request(paras)
+			     { 
+			         var  url = location.href; 
+			         var  paraString = url.substring(url.indexOf( "?" )+1,url.length).split( "&" ); 
+			         var  paraObj = {} 
+			         for  (i=0; j=paraString[i]; i++){ 
+			         paraObj[j.substring(0,j.indexOf( "=" )).toLowerCase()] =
+			                  j.substring(j.indexOf( "=" )+1,j.length); 
+			         } 
+			         var  returnValue = paraObj[paras.toLowerCase()]; 
+			         if ( typeof (returnValue)== "undefined" ){ 
+			         return  "" ; 
+			         } else { 
+			         return  returnValue; 
+			         } 
+			     }
+		
+				
+					$(document).ready(function(){
+
+				
+
+						$("#username").text(request("username"));
+						$("#money").text(request("money"));
+						
+						
+						
+						$(".yijiguang").change(function(){
+							
+							if($(this).val()==2)
+							{
+							
+							
+							$(".erjikuang>#erji").text("深田主演");
+							$(".erjikuang>#sanji").text("樱井主演");
+							$(".erjikuang>#siji").text("波多主演");
+							
+								
+								
+								
+							}
+							
+							if($(this).val()==3)
+							{
+							
+							
+							$(".erjikuang>#erji").text("业火的向日葵");
+							$(".erjikuang>#erji").val("50");
+					
+							$(".price1").text($(".erjikuang>#erji").val());
+							
+							$(".erjikuang>#sanji").text("远海的侦探");
+							$(".erjikuang>#siji").text("零的执行人");
+							
+								
+								
+								
+							}
+							
+							
+						})
+
+
+					})
+				
+				
+			</script>
+		
+	</head>
+	<body>
+		
+		<center>
+			 <img style="width: 150px;" src="./img/touxiang.jpg" >
+			
+			<div class="gerenxinxi">
+			<a class="yonghu"  >用户名:</a>  <a class="yonghu" style="color: red;" id="username"></a>
+			<br><br><br>
+			<a class="yonghu" >账户金额:</a>	<a class="yonghu" style="color: red;"  id="money" ></a>
+				
+				
+			</div>
+			
+			
+			<div class="buy">
+			<form action="" method="">
+				<select class="yijiguang">
+					<option value="1"  >请选择商品</option>
+					<option   value="2" >岛国动作大片</option>
+					<option   value="3" >名侦探柯南</option>
+				</select>
+				
+				<select class="erjikuang">
+					<option   class="" ></option>
+					<option   id="erji"></option>
+					<option   id="sanji"></option>
+					<option   id="siji"></option>
+				</select>
+				<br>
+				<a class="price" >价格:</a><a class="price1" style="color: red;"></a>
+				<br>
+				<input type="submit" id="goumai" name=""  value="购买商品" />
+			</form>
+		
+			<button type="button">购买记录</button>
+			<button type="button">充值</button>
+			<button type="button">退出</button>
+			
+			</div>
+			
+			
+			
+			
+		</center>
+	</body>
+</html>

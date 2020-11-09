@@ -1,0 +1,47 @@
+.gerenxinxi{
+	
+	border-style: solid;
+	height: 100px;
+	width: 350px;
+	background-color:skyblue;
+}
+
+.yonghu{
+	
+	float: left;
+	margin-left: 50px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	color: aliceblue;
+}
+
+.buy{
+	
+	border-style: solid;
+	height: 400px;
+	width: 350px;
+	background-color:wheat;
+	
+}
+
+.yijiguang,.erjikuang{
+	font-style:oblique;
+	margin-top: 30px;
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+	width: 300px;
+	height: 40px;
+}
+
+#goumai{
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	width: 200px;
+	height: 40px;
+	
+	
+}
